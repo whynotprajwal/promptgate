@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+pyyaml
+presidio-analyzer
+presidio-anonymizer
+spacy
+httpx
+pytest
+streamlit
+pandas

@@ -1,0 +1,33 @@
+default_action: ALLOW
+
+entities:
+  AWS_ACCESS_KEY:
+    severity: CRITICAL
+    action: BLOCK
+  GENERIC_API_KEY:
+    severity: CRITICAL
+    action: BLOCK
+  PASSWORD:
+    severity: HIGH
+    action: PRIVATE_ROUTE
+  BEARER_TOKEN:
+    severity: CRITICAL
+    action: BLOCK
+  EMAIL_ADDRESS:
+    severity: MEDIUM
+    action: SANITIZE
+  PHONE_NUMBER:
+    severity: MEDIUM
+    action: SANITIZE
+  PERSON:
+    severity: LOW
+    action: SANITIZE
+  LOCATION:
+    severity: LOW
+    action: ALLOW
+  IP_ADDRESS:
+    severity: MEDIUM
+    action: SANITIZE
+
+ldp:
+  epsilon: 5.5
